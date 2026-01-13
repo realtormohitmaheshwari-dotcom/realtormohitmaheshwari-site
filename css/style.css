@@ -32,18 +32,6 @@ body {
   position: relative;
   min-height: 100vh;
   color: #ffffff;
-
-  /* IMPORTANT: CSS file is inside /css so ../ is REQUIRED */
-  background-image:
-    linear-gradient(
-      rgba(15, 26, 36, 0.75),
-      rgba(15, 26, 36, 0.85)
-    ),
-    url("../assets/img/hero-bg.jpg");
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .nav {
   max-width: 1200px;

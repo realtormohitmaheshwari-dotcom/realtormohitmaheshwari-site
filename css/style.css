@@ -28,14 +28,28 @@ body {
    HEADER & NAV
 ========================= */
 .header {
+  position: relative;
   min-height: 100vh;
-  color: var(--white);
+  color: #fff;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
     linear-gradient(
       rgba(15, 26, 36, 0.75),
       rgba(15, 26, 36, 0.85)
     ),
     url("../assets/img/hero-bg.jpg") center / cover no-repeat;
+  z-index: 0;
+}
+
+.header > * {
+  position: relative;
+  z-index: 1;
 }
 
 .nav {

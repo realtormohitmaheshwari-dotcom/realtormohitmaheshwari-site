@@ -88,28 +88,7 @@ body {
   font-weight: 600;
 }
 
-/* =========================
-   HERO
-========================= */
-.hero {
-  max-width: 900px;
-  margin: auto;
-  padding: 140px 20px 0;
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  max-width: 620px;
-  margin-bottom: 32px;
-}
+<img src="./assets/img/logo.png" alt="Realtor Mohit Maheshwari" class="site-logo">
 
 .btn-primary {
   background: var(--gold);

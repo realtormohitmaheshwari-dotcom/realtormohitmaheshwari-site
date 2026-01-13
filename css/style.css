@@ -28,14 +28,14 @@ body {
    HEADER & NAV
 ========================= */
 .header {
+  min-height: 100vh;
+  color: var(--white);
   background:
     linear-gradient(
       rgba(15, 26, 36, 0.75),
       rgba(15, 26, 36, 0.85)
     ),
-    url("assets/img/hero-bg.jpg") center/cover no-repeat;
-  min-height: 100vh;
-  color: var(--white);
+    url("../assets/img/hero-bg.jpg") center / cover no-repeat;
 }
 
 .nav {
@@ -83,7 +83,6 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 140px 20px 0;
-  text-align: left;
 }
 
 .hero h1 {
@@ -196,16 +195,6 @@ body {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
 }
 
-.property-card h4 {
-  font-size: 1.15rem;
-  margin-bottom: 6px;
-}
-
-.property-card p {
-  color: #666;
-  font-size: 0.95rem;
-}
-
 /* =========================
    ABOUT
 ========================= */
@@ -227,35 +216,6 @@ body {
   color: var(--white);
 }
 
-.cta h2 {
-  font-size: 2.2rem;
-  margin-bottom: 26px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-.contact-form {
-  max-width: 520px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 14px 16px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 0.95rem;
-}
-
-.contact-form textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
 /* =========================
    FOOTER
 ========================= */
@@ -266,34 +226,12 @@ body {
   text-align: center;
 }
 
-.footer p {
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-}
-
-.footer .social {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
-.footer .social a {
-  color: var(--text-light);
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.footer .social a:hover {
-  color: var(--gold);
-}
-
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
   .hero {
     padding-top: 110px;
-    text-align: left;
   }
 
   .hero h1 {

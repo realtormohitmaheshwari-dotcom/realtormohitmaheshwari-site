@@ -44,8 +44,8 @@ body {
 
 .logo img {
   height: 48px;
+  width: auto;
 }
-
 .nav-links {
   list-style: none;
   display: flex;

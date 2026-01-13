@@ -3,97 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <title>Realtor Mohit Maheshwari | Jaipur Real Estate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Luxury homes, plots & investments in Jaipur. Trusted real estate consultant – Mohit Maheshwari." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Buy, sell & invest in Jaipur real estate with Realtor Mohit Maheshwari. Trusted property consultant for investors and end-users." />
+
+  <link rel="icon" href="assets/img/logo.png" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad66.js" crossorigin="anonymous"></script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">
-      Realtor Mohit Maheshwari
-    </a>
+<!-- HEADER -->
+<header class="header">
+  <div class="nav">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Realtor Mohit Maheshwari">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </div>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      ☰
-    </button>
+  <div class="hero">
+    <h1>Realtor Mohit Maheshwari</h1>
+    <p>Jaipur Real Estate Consultant for End Users & Investors</p>
+    <a href="#contact" class="btn btn-primary">Get Property Consultation</a>
+  </div>
+</header>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2 class="section-title">What I Help You With</h2>
+  <div class="services-grid">
+    <div class="card">
+      <i class="fas fa-home"></i>
+      <h3>Buy Property</h3>
+      <p>Verified residential & commercial properties across Jaipur.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-rupee-sign"></i>
+      <h3>Sell Property</h3>
+      <p>Right pricing, serious buyers, smooth closure.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Invest Smart</h3>
+      <p>ROI-focused guidance for long-term investors.</p>
     </div>
   </div>
-</nav>
+</section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container text-center">
-    <h1>Jaipur Real Estate, Simplified.</h1>
-    <p>Buy • Sell • Invest with Trust</p>
-    <a href="#contact" class="btn btn-gold">Contact Now</a>
+<!-- PROPERTIES -->
+<section id="properties" class="section light">
+  <h2 class="section-title">Featured Properties</h2>
+  <div class="properties-grid">
+    <div class="property-card">
+      <h4>Premium Flats – Mansarovar</h4>
+      <p>2 & 3 BHK | Ready to Move</p>
+    </div>
+    <div class="property-card">
+      <h4>Luxury Villas – Vaishali Nagar</h4>
+      <p>Gated Society | High Appreciation</p>
+    </div>
+    <div class="property-card">
+      <h4>Commercial Shops – Ajmer Road</h4>
+      <p>Rental Income Assets</p>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <div class="container text-center">
-    <h2>About Me</h2>
-    <p>
-      I’m Mohit Maheshwari, a Jaipur-based real estate consultant helping
-      families and investors make safe, profitable property decisions.
-    </p>
-  </div>
+  <h2 class="section-title">About Mohit Maheshwari</h2>
+  <p class="about-text">
+    I help people make confident real estate decisions in Jaipur — whether you’re buying your first home,
+    selling an existing property, or investing for long-term growth.
+    <br><br>
+    No false promises. No pushy sales. Only clear advice, verified properties, and honest execution.
+  </p>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section bg-light">
-  <div class="container">
-    <h2 class="text-center">Services</h2>
-    <div class="row text-center mt-4">
-      <div class="col-md-4">🏠 Residential Properties</div>
-      <div class="col-md-4">🏢 Commercial Projects</div>
-      <div class="col-md-4">📈 Investment Consulting</div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container text-center">
-    <h2>Featured Projects</h2>
-    <p>Carefully selected properties with clear titles & growth potential.</p>
-  </div>
+<!-- CTA -->
+<section class="cta">
+  <h2>Looking for the Right Property in Jaipur?</h2>
+  <a href="#contact" class="btn btn-primary">Talk to Me</a>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section bg-dark text-white">
-  <div class="container text-center">
-    <h2>Get in Touch</h2>
-    <p>Call or WhatsApp for site visits & deals</p>
-    <a href="tel:+91XXXXXXXXXX" class="btn btn-outline-light">Call Now</a>
-  </div>
+<section id="contact" class="section light">
+  <h2 class="section-title">Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <textarea placeholder="Your Requirement"></textarea>
+    <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+  </form>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer text-center">
-  © 2026 Realtor Mohit Maheshwari. All Rights Reserved.
+<footer class="footer">
+  <p>© 2026 Realtor Mohit Maheshwari · Jaipur</p>
+  <div class="social">
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

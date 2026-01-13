@@ -42,10 +42,26 @@ body {
   justify-content: space-between;
 }
 
-.logo img {
-  height: 200px;
+/* =========================
+   LOGO – FINAL FIX
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  height: 52px;          /* desktop perfect */
   width: auto;
   display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .site-logo {
+    height: 44px;
+  }
 }
 .nav-links {
   list-style: none;

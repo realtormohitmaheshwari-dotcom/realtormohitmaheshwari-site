@@ -1,54 +1,41 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    //  Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
+// =========================
+// SMOOTH SCROLL
+// =========================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
 });
+
+// =========================
+// STICKY NAV SHADOW
+// =========================
+const nav = document.querySelector(".nav");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    nav.style.background = "#000";
+    nav.style.boxShadow = "0 10px 30px rgba(0,0,0,0.3)";
+  } else {
+    nav.style.background = "transparent";
+    nav.style.boxShadow = "none";
+  }
+});
+
+// =========================
+// CONTACT FORM (UI ONLY)
+// =========================
+const form = document.querySelector(".contact-form");
+if (form) {
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Thank you! We will contact you shortly.");
+    form.reset();
+  });
+}

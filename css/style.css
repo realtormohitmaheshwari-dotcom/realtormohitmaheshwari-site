@@ -28,6 +28,7 @@ body {
    HEADER & NAV
 ========================= */
 .header {
+  position: relative;
   min-height: 100vh;
   color: var(--white);
   background:
@@ -37,6 +38,14 @@ body {
     ),
     url("../assets/img/hero-bg.jpg") center / cover no-repeat;
 }
+
+/* IMPORTANT FIX FOR BOOTSTRAP */
+.header .container {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
 .nav {
   max-width: 1200px;
   margin: auto;
